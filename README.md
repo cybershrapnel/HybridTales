@@ -7,7 +7,10 @@ Get a todo list ChatGPT plugin up and running in minutes using Python y FastAPI.
 To install the required packages for this plugin, run the following command to create a virtual environment and install the packages:
 
 ```bash
-python -m venv venv && source venv/bin/activate
+python -m venv venv
+```
+```bash
+venv\Scripts\activate.bat
 ```
 ```bash
 pip install -r requirements.txt
