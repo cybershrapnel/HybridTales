@@ -3,6 +3,93 @@ info:
   title: FastAPI
   version: 0.1.0
 paths:
+  /stories:
+    post:
+      summary: Add Story
+      operationId: add_story_stories__post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StoryItem'
+        required: true
+      responses:
+        '201':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                title: Response Add Story Stories Post
+                type: object
+                additionalProperties:
+                  type: string
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+    get:
+      summary: Get Stories
+      operationId: get_stories_stories__get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                title: Response Get Stories Stories Get
+                type: array
+                items:
+                  $ref: '#/components/schemas/StoryItem'
+        '404':
+          description: Stories Not Found
+          content:
+            application/json:
+            schema:
+              $ref: '#/components/schemas/HTTPValidationError'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+            schema:
+              $ref: '#/components/schemas/HTTPValidationError'
+  /stories/{storyId}:
+    get:
+      summary: Get Story
+      operationId: get_story_stories__storyId__get
+      parameters:
+        - required: true
+          schema:
+            title: StoryId
+            type: string
+          name: storyId
+          in: path
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                title: Response Get Story Stories  StoryId  Get
+                type: object
+                properties:
+                  title:
+                    type: string
+                  content:
+                    type: string
+        '404':
+          description: Story Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
   /todos/{username}:
     get:
       summary: Get Todos
@@ -109,6 +196,19 @@ paths:
               schema: {}
 components:
   schemas:
+    StoryItem:
+      title: StoryItem
+      required:
+        - title
+        - content
+      type: object
+      properties:
+        title:
+          type: string
+          description: The title of the story.
+        content:
+          type: string
+          description: The content of the story.
     HTTPValidationError:
       title: HTTPValidationError
       type: object
