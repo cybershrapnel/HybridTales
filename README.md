@@ -48,7 +48,7 @@ Once the local server is running:
 The plugin should now be installed and enabled! You can start with a question like "What is on my todo list" or "create a random story and add it to the stories list" and then try adding something to it as well! You can simply ask to see either list.
 
 ## Using the API via Swagger
-[http://localhost:8000/docs](NanoCheeZe MEQUAVIS HybridTales API)]()
+[https://nanocheeze.com/docs#/](NanoCheeZe MEQUAVIS HybridTales API)
 
 You can access the API documentation and make queries using Swagger. Follow the steps below to get started:
 
