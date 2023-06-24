@@ -4,21 +4,16 @@ from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
-import uvicorn
+import hypercorn
 
 app = FastAPI()
 
-ORIGINS = [
-    "http://localhost:8000",
-    "https://chat.openai.com"
-]
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=ORIGINS,
+    allow_origins=["*"],  # Allow any origin
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["*"],  # Allow any method
+    allow_headers=["*"],  # Allow any header
 )
 
 app.mount("/.well-known", StaticFiles(directory=".well-known"), name="static")
