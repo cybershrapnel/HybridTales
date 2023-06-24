@@ -1,2 +1,4 @@
 fastapi
 hypercorn
+beautifulsoup4
+requests
