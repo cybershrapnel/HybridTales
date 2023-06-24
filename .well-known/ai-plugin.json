@@ -13,7 +13,7 @@
     "auth": {
       "type": "none"
     },
-    "logo_url": "http://www.nanocheeze.com/ncz/ncz.png",
+    "logo_url": "https://raw.githubusercontent.com/cybershrapnel/chatgpt-plugins-fastapi-quickstart/main/logo.png",
     "contact_email": "legal@nanocheeze.com",
     "legal_info_url": "http://www.nanocheeze.com/legal"
   }
