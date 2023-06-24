@@ -1,7 +1,10 @@
 ![image info](./logo.png)
 
 HybridTales Plugin for ChatGPT
-# built from [FastAPI] ChatGPT plugins quickstart
+
+This is a much more complicated verssion of a demonstration plugin I posted here:
+[https://github.com/cybershrapnel/chatgpt-plugins-fastapi-quickstart](https://github.com/cybershrapnel/chatgpt-plugins-fastapi-quickstart)
+If you find anything too complicated in this project then check out the old repo for educational purposes as it is a great place for anybody to start in regards to building a plugin.
 
 How to install the plugin on OpenAI ChatGPT
 ![image info](https://steemitimages.com/p/C3TZR1g81UNaPs7vzNXHueW5ZM76DSHWEY7onmfLxcK2iNuUcdr1dVtynRCFB2KSzbefvezcfrSCrWFWnt5grMqDkHvN2TYc2Dz1ZN255PxgAPnCgM6CiSr)
@@ -42,6 +45,7 @@ To relaunch your server from a new window you will need to reactivate your virtu
 Simply type:
 ```bash
 venv\Scripts\activate.bat
+hypercorn main:app --bind 0.0.0.0:443 --certfile certificate.crt --keyfile private.key --log-level debug
 ```
 
 Once the local server is running:
@@ -57,7 +61,7 @@ Once the local server is running:
 The plugin should now be installed and enabled! You can start with a question like "What is on my todo list" or "create a random story and add it to the stories list" and then try adding something to it as well! You can simply ask to see either list.
 
 ## Using the API via Swagger
-[NanoCheeZe MEQUAVIS HybridTales API](https://nanocheeze.com/docs)
+[NanoCheeZe MEQUAVIS HybridTales API](https://nanocheeze.com/docs) - HybridTales API
 
 You can access the API documentation and make queries using Swagger. Follow the steps below to get started:
 
