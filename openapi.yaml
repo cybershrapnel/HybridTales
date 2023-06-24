@@ -1,12 +1,44 @@
-openapi: 3.0.2
+openapi: 3.0.1
 info:
-  title: FastAPI
-  version: 0.1.0
+  title: HybridTales
+  version: 1.0.0
+servers:
+#  - url: https://localhost:443
+  - url: https://nanocheeze.com
 paths:
-  /stories:
+  /scrape/{url}:
+    get:
+      summary: Scrape a URL
+      operationId: scrape_url
+      parameters:
+        - name: url
+          in: path
+          description: URL to scrape
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  content:
+                    type: string
+                    description: The scraped content
+  /stories/{username}:
     post:
       summary: Add Story
-      operationId: add_story_stories__post
+      operationId: add_story_stories__username__post
+      parameters:
+        - required: true
+          schema:
+            title: Username
+            type: string
+          name: username
+          in: path
       requestBody:
         content:
           application/json:
@@ -29,67 +61,44 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/HTTPValidationError'
-    get:
-      summary: Get Stories
-      operationId: get_stories_stories__get
-      responses:
-        '200':
-          description: Successful Response
-          content:
-            application/json:
-              schema:
-                title: Response Get Stories Stories Get
-                type: array
-                items:
-                  $ref: '#/components/schemas/StoryItem'
-        '404':
-          description: Stories Not Found
-          content:
-            application/json:
+/stories/{storyId}:
+  get:
+    summary: Get Story by Title (exact)
+    operationId: get_story_stories__storyId__get
+    parameters:
+      - required: true
+        schema:
+          title: StoryId
+          type: string
+        name: storyId
+        in: path
+    responses:
+      '200':
+        description: Successful Response
+        content:
+          application/json:
+            schema:
+              title: Response Get Story Stories  StoryId  Get
+              type: object
+              properties:
+                title:
+                  type: string
+                content:
+                  type: string
+                author:
+                  type: string
+      '404':
+        description: Story Not Found
+        content:
+          application/json:
             schema:
               $ref: '#/components/schemas/HTTPValidationError'
-        '422':
-          description: Validation Error
-          content:
-            application/json:
+      '422':
+        description: Validation Error
+        content:
+          application/json:
             schema:
               $ref: '#/components/schemas/HTTPValidationError'
-  /stories/{storyId}:
-    get:
-      summary: Get Story
-      operationId: get_story_stories__storyId__get
-      parameters:
-        - required: true
-          schema:
-            title: StoryId
-            type: string
-          name: storyId
-          in: path
-      responses:
-        '200':
-          description: Successful Response
-          content:
-            application/json:
-              schema:
-                title: Response Get Story Stories  StoryId  Get
-                type: object
-                properties:
-                  title:
-                    type: string
-                  content:
-                    type: string
-        '404':
-          description: Story Not Found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/HTTPValidationError'
-        '422':
-          description: Validation Error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/HTTPValidationError'
   /todos/{username}:
     get:
       summary: Get Todos
@@ -201,14 +210,22 @@ components:
       required:
         - title
         - content
+        - author
+        - id
       type: object
       properties:
+        id:
+          type: integer
+          description: The id of the story.
         title:
           type: string
           description: The title of the story.
         content:
           type: string
           description: The content of the story.
+        author:
+          type: string
+          description: The author of the story.
     HTTPValidationError:
       title: HTTPValidationError
       type: object
