@@ -39,8 +39,10 @@ uvicorn main:app --reload
 
 To relaunch your server from a new window you will need to reactivate your virtual Python space.
 
-Simple type:
+Simply type:
+```bash
 venv\Scripts\activate.bat
+```
 
 Once the local server is running:
 
