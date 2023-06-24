@@ -5,7 +5,10 @@ HybridTales Plugin for ChatGPT
 
 How to install the plugin on OpenAI ChatGPT
 ![image info](https://steemitimages.com/p/C3TZR1g81UNaPs7vzNXHueW5ZM76DSHWEY7onmfLxcK2iNuUcdr1dVtynRCFB2KSzbefvezcfrSCrWFWnt5grMqDkHvN2TYc2Dz1ZN255PxgAPnCgM6CiSr)
-![image info](https://steemitimages.com/p/C3TZR1g81UNaPs7vzNXHueW5ZM76DSHWEY7onmfLxcK2iNz8wLEhRSHzHYZmVHYTxmizYrYJ5e4iZ5fLVmAw6SMUDwu2DD4TkWV2NcK7KpzrCcBhTyGidGS)
+
+And then make sure you enable the plugin after installation.
+
+![image info](https://steemitimages.com/p/C3TZR1g81UNaPs7vzNXHueW5ZM76DSHWEY7onmfLxcK2iNz8wLEhRSHzHYZmVHYTxmizYrYJ5e4iZ5fLVmAw6SMUDwu2DD4TkWV2NcK7KpzrCcBhTyGidGS?format=match&mode=fit&width=500)
 
 ## Setup
 
