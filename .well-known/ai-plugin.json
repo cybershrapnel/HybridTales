@@ -1,16 +1,17 @@
 {
     "schema_version": "v1",
-    "name_for_human": "HybridTales NanoCheeZeMEQUAVIS",
-    "name_for_model": "todo",
+    "name_for_human": "HybridTales",
+    "name_for_model": "Stories",
     "description_for_human": "Plugin for making lists and submitting and generating amd getting stories for hybridtales.com.",
     "description_for_model": "Plugin for managing a TODO list, you can add, remove and view your TODOs. This plugin also manages a STORIES list, you can add, remove, generate, and view your STORIESs. You can also view other usernames STORIES and ask for a list of all users STORIES.",
-    "auth": {
-      "type": "none"
-    },
     "api": {
       "type": "openapi",
-      "url": "http://localhost:8000/openapi.yaml",
+      "url": "https://nanocheeze.com/openapi.json",
+
       "is_user_authenticated": false
+    },
+    "auth": {
+      "type": "none"
     },
     "logo_url": "http://www.nanocheeze.com/ncz/ncz.png",
     "contact_email": "legal@nanocheeze.com",
