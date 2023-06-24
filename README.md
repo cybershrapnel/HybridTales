@@ -1,4 +1,5 @@
 ![image info](./logo.png)
+
 HybridTales Plugin for ChatGPT
 # built from [FastAPI] ChatGPT plugins quickstart
 
@@ -23,7 +24,7 @@ To run the plugin, enter the following command:
 hypercorn main:app --bind 0.0.0.0:443 --certfile certificate.crt --keyfile private.key --log-level debug
 ```
 
-or us uvicorn for localhost testing (can also use hypercorn with ssl on localhost)
+or use uvicorn for localhost testing (can also use hypercorn with ssl on localhost)
 
 ```bash
 uvicorn main:app --reload
