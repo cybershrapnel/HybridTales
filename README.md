@@ -3,7 +3,7 @@
 HybridTales Plugin for ChatGPT
 # built from [FastAPI] ChatGPT plugins quickstart
 
-Get a todo list ChatGPT plugin up and running in minutes using Python y FastAPI. If you do not already have plugin developer access, please [join the waitlist](https://openai.com/waitlist/plugins). The documentation is horid right now.
+![image info](https://steemitimages.com/p/C3TZR1g81UNaPs7vzNXHueW5ZM76DSHWEY7onmfLxcK2iNuUcdr1dVtynRCFB2KSzbefvezcfrSCrWFWnt5grMqDkHvN2TYc2Dz1ZN255PxgAPnCgM6CiSr)
 
 ## Setup
 
