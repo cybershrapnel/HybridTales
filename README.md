@@ -2,7 +2,7 @@
 
 HybridTales Plugin for ChatGPT
 
-This is a much more complicated verssion of a demonstration plugin I posted here:
+This is a much more complicated version of a demonstration plugin I posted here:
 [https://github.com/cybershrapnel/chatgpt-plugins-fastapi-quickstart](https://github.com/cybershrapnel/chatgpt-plugins-fastapi-quickstart)
 If you find anything too complicated in this project then check out the old repo for educational purposes as it is a great place for anybody to start in regards to building a plugin.
 
