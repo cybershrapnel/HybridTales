@@ -49,14 +49,12 @@ The plugin should now be installed and enabled! You can start with a question li
 
 ## Using the API via Swagger
 [NanoCheeZe MEQUAVIS HybridTales API](https://nanocheeze.com/docs)
+
 You can access the API documentation and make queries using Swagger. Follow the steps below to get started:
 
-1. You can run the project locally or from your domain.
-2. Open your web browser and visit [http://localhost:8000/docs](http://localhost:8000/docs). (or your domain instead of localhost)
+1. You can run the project locally or from your domain to access the API. The API is interactive.
+2. Open your web browser and visit [http://localhost/docs](http://localhost/docs). (or your domain instead of localhost)
 3. On the API page, you'll find an interactive interface that allows you to explore and test the different API routes and endpoints.
 
 ![image info](./swagger.png)
 
-## Getting help
-
-If you run into issues or have questions building a plugin, please join our [Developer community forum](https://community.openai.com/c/chat-plugins/20).
