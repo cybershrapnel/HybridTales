@@ -12,7 +12,9 @@ And then make sure you enable the plugin after installation.
 
 ## Setup for your own plugin server
 
-To install the required packages for this plugin, run the following command to create a virtual environment and install the packages:
+Clone this git into your desired location.
+
+To install the required packages for this plugin, run the following commands to create a virtual environment and install the packages:
 
 ```bash
 python -m venv venv
@@ -34,6 +36,11 @@ or use uvicorn for localhost testing (can also use hypercorn with ssl on localho
 ```bash
 uvicorn main:app --reload
 ```
+
+To relaunch your server from a new window you will need to reactivate your virtual Python space.
+
+Simple type:
+venv\Scripts\activate.bat
 
 Once the local server is running:
 
