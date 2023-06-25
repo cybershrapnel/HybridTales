@@ -16,6 +16,8 @@ What Does This Plugin Do?
 7. If you want to be credited as author on any works put in the list you must tell chatgpt that you want to be author and what your author name is or the stories will be assigned to chatgpt or anonymous, etc. Chatgpt changed the API so plugins no longer have access to usernames which also means the todo list no longer functions as intended.
 8. Many of our plugins API functions can be accessed without even installing our API. for example, you can install the official linkreader app and then ask the linkreader plugin to acces one of our api endpoints such as [https://nanocheeze.com/tales/random](https://nanocheeze.com/tales/random)
 By accessing that page with linkreader you are essentially loading in a random story into chatgpt and you can do the same thing with most functions of the HybridTales API. This could be useful for cases where you already have 3 plugins installed and don't want to deactivate one or even for double use cases with our plugin itself. ie, you can ask hybridtales to pull up it's own api against its own story generation with chatGPT.
+9. Images Pull. ask the hybridtales plugin to use the pull/images function on a url to render all the images right in chatGPT. I want to expand this to crawl several links deep.
+10. Tales index. You can pull up any of the specific random storys by their id numer which is an integer from 1 to whatever. currently about 800 max as of 6/25/23 but it grows by about 20-50 a day.
 
 You can access, view, and even interactively use our API from the following page:
 [https://nanocheeze.com/docs#
@@ -25,6 +27,12 @@ Here is a full list of API calls:
 
 GET /scrape/
 Scrape
+
+GET /pull/images/
+Pull Images
+
+GET /tales/{tale_index}
+Get Specific Tale
 
 GET /avatars/count_and_sample
 Get Avatar Count And Sample
