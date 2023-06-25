@@ -99,7 +99,7 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/HTTPValidationError'
-  /todos/{username}:
+/todos/{username}:
     get:
       summary: Get Todos
       operationId: get_todos_todos__username__get
@@ -136,7 +136,12 @@ paths:
             type: string
           name: username
           in: path
-      requestBody:
+        - name: password
+          in: query
+          required: true
+          schema:
+            type: string
+           requestBody:
         content:
           application/json:
             schema:
@@ -168,6 +173,11 @@ paths:
             type: string
           name: username
           in: path
+        - name: password
+          in: query
+          required: true
+          schema:
+            type: string
       requestBody:
         content:
           application/json:
