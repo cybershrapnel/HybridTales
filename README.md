@@ -5,10 +5,12 @@ NanoCheeZe HybridTales Plugin for ChatGPT (WITH LINK SCRAPER/READER AND IMAGE PU
 Easily perform power prompts, transform ChatGPT into a powerful power prompted AI with avatar personas, and easily write infinite unique stories in a fun and interesting way that brings you as the user along for the experience as an interactive part of the AI creation process.
 
 This is a much more complicated version of a demonstration plugin I posted here:
-[![Watch the video](https://github.com/cybershrapnel/chatgpt-plugins-fastapi-quickstart)
+[https://github.com/cybershrapnel/chatgpt-plugins-fastapi-quickstart](https://github.com/cybershrapnel/chatgpt-plugins-fastapi-quickstart)
+
 If you find anything too complicated in this project then check out the old repo for educational purposes as it is a great place for anybody to start in regards to building a plugin.
 
-
+If you want to help out we love any support we can get whether it be likes, follows, or donations. You can find our Patreon below:
+[https://www.patreon.com/hybridtales](https://www.patreon.com/hybridtales)
 
 https://github.com/cybershrapnel/HybridTales/assets/17352697/0a0405a7-7fd6-4de0-a13d-3b7d32027148
 
@@ -20,7 +22,7 @@ What Does This Plugin Do?
 3. Power Prompts - Ask hybridtales to grab a random power prompt for you to try and experiment with. I promise you will be pleasantly surprised by the experience.
 4. Avatar Personas - Ask chatgpt to load a an avatar from hybridtales and to embody that persona from the returned prompt. See what kind of answer batman gives you about your homework.
 5. story list and todo list. The story list is a global todo list that stores any and all stories users create using the hybridtales plugin. We do not store any user input or data, but we do store the output from gpt that is a story before it get sent over the api and to you. Basically the hybridtale uses it's own ai to flag and catalog all of the stories it shares or creates, etc. Todo list items can be deleted stories are persistent and globally shared as one giant community list.
-6. Story Search - YOu can search by story id, story title (eact match only), by author or by keyword. You can also have a list of random stories returned to you from the list which can then be used with prompting to do all sorts of things such as tell a new story or to power prompt the ai to produce new and unique output for whatever you are working on. You would be surprised by the output tha a good power prompt will yield even if it didn't initially make sense as a prompt.
+6. Story Search - You can search by story id, story title (eact match only), by author or by keyword. You can also have a list of random stories returned to you from the list which can then be used with prompting to do all sorts of things such as tell a new story or to power prompt the ai to produce new and unique output for whatever you are working on. You would be surprised by the output tha a good power prompt will yield even if it didn't initially make sense as a prompt.
 7. If you want to be credited as author on any works put in the list you must tell chatgpt that you want to be author and what your author name is or the stories will be assigned to chatgpt or anonymous, etc. Chatgpt changed the API so plugins no longer have access to usernames which also means the todo list no longer functions as intended.
 8. Many of our plugins API functions can be accessed without even installing our API. for example, you can install the official linkreader app and then ask the linkreader plugin to acces one of our api endpoints such as [https://nanocheeze.com/tales/random](https://nanocheeze.com/tales/random)
 By accessing that page with linkreader you are essentially loading in a random story into chatgpt and you can do the same thing with most functions of the HybridTales API. This could be useful for cases where you already have 3 plugins installed and don't want to deactivate one or even for double use cases with our plugin itself. ie, you can ask hybridtales to pull up it's own api against its own story generation with chatGPT.
