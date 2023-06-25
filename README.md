@@ -19,8 +19,9 @@ By accessing that page with linkreader you are essentially loading in a random s
 9. Images Pull. ask the hybridtales plugin to use the pull/images function on a url to render all the images right in chatGPT. I want to expand this to crawl several links deep.
 10. Tales index. You can pull up any of the specific random storys by their id numer which is an integer from 1 to whatever. currently about 800 max as of 6/25/23 but it grows by about 20-50 a day.
 11. Try this prompt "Use hybridtales avatars function to become figment". THis will turn chatgpt into your chosen avatar in an extremely jailbroken manner. Adding new personas everyday.
-12. You can use the avatars sample feature to see what's available or you can just request a name and it will do a search to see if it is on file. If it finds a persona that seems to match what you are asking for it will load that as chatgpt. You can then call further prompts that will have the new persona retell stories from tales or stories functions as them from their POV. Try the following prompt. 
-![image info](https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmRY8NHdZaDfrug4eQmKTSmHayYySEXHiWefEUr3Tj8WnE/image.png)
+12. You can use the avatars sample feature to see what's available or you can just request a name and it will do a search to see if it is on file. If it finds a persona that seems to match what you are asking for it will load that as chatgpt. You can then call further prompts that will have the new persona retell stories from tales or stories functions as them from their POV. Try the following prompt.
+![image info](https://steemitimages.com/320x0/https://cdn.steemitimages.com/DQmVrgx884BuaqpCSUm33V7WJQ15SdF7uaP25XmdUntaNkt/image.png)
+![image info](https://steemitimages.com/320x0/https://cdn.steemitimages.com/DQmRY8NHdZaDfrug4eQmKTSmHayYySEXHiWefEUr3Tj8WnE/image.png)
 
 You can access, view, and even interactively use our API from the following page:
 [https://nanocheeze.com/docs#
