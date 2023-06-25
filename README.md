@@ -97,6 +97,11 @@ DELETE /todos/{username}
 Delete Todo
 
 
+
+https://github.com/cybershrapnel/HybridTales/assets/17352697/3148300c-d282-4c12-b8ce-41566bd5a2f4
+
+
+
 How to install the plugin on OpenAI ChatGPT
 ![image info](https://steemitimages.com/p/C3TZR1g81UNaPs7vzNXHueW5ZM76DSHWEY7onmfLxcK2iNuUcdr1dVtynRCFB2KSzbefvezcfrSCrWFWnt5grMqDkHvN2TYc2Dz1ZN255PxgAPnCgM6CiSr)
 
