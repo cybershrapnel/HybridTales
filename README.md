@@ -1,6 +1,6 @@
 ![image info](./logo.png)
 
-HybridTales Plugin for ChatGPT
+NanoCheeZe HybridTales Plugin for ChatGPT
 
 This is a much more complicated version of a demonstration plugin I posted here:
 [https://github.com/cybershrapnel/chatgpt-plugins-fastapi-quickstart](https://github.com/cybershrapnel/chatgpt-plugins-fastapi-quickstart)
