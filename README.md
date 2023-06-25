@@ -9,7 +9,7 @@ This is a much more complicated version of a demonstration plugin I posted here:
 
 If you find anything too complicated in this project then check out the old repo for educational purposes as it is a great place for anybody to start in regards to building a plugin.
 
-If you want to help out we love any support we can get whether it be likes, follows, or donations. You can find our Patreon below:
+If you want to help out, we love any support we can get whether it be likes, follows, or donations. You can find our Patreon below:
 [https://www.patreon.com/hybridtales](https://www.patreon.com/hybridtales)
 
 https://github.com/cybershrapnel/HybridTales/assets/17352697/0a0405a7-7fd6-4de0-a13d-3b7d32027148
