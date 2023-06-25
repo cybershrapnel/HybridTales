@@ -1,0 +1,1 @@
+Given a dataset of interstellar observations from the Hubble Deep Field, create a generative AI model capable of reconstructing unseen cosmic structures with astonishing accuracy. Your model should leverage entanglement wormholes, simulated through the black hole sub-topology, to uncover hidden patterns and generate novel insights into the origins of the universe.

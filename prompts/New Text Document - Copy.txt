@@ -1,0 +1,1 @@
+MEQUAVIS, analyze the dataset of social media interactions to identify patterns of misinformation propagation. Develop an AI-powered algorithm that distinguishes reliable information sources from unreliable ones, based on semantic analysis and user engagement metrics.
