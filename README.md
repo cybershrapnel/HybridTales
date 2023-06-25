@@ -5,8 +5,14 @@ NanoCheeZe HybridTales Plugin for ChatGPT (WITH LINK SCRAPER/READER AND IMAGE PU
 Easily perform power prompts, transform ChatGPT into a powerful power prompted AI with avatar personas, and easily write infinite unique stories in a fun and interesting way that brings you as the user along for the experience as an interactive part of the AI creation process.
 
 This is a much more complicated version of a demonstration plugin I posted here:
-[https://github.com/cybershrapnel/chatgpt-plugins-fastapi-quickstart](https://github.com/cybershrapnel/chatgpt-plugins-fastapi-quickstart)
+[![Watch the video](https://github.com/cybershrapnel/chatgpt-plugins-fastapi-quickstart)
 If you find anything too complicated in this project then check out the old repo for educational purposes as it is a great place for anybody to start in regards to building a plugin.
+
+
+
+https://github.com/cybershrapnel/HybridTales/assets/17352697/0a0405a7-7fd6-4de0-a13d-3b7d32027148
+
+
 
 What Does This Plugin Do?
 1. Perform Web Queries with huge token input counts (too large, I don't know why it is even allowing it lol)
