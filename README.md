@@ -149,5 +149,5 @@ You can access the API documentation and make queries using Swagger. Follow the 
 2. Open your web browser and visit [http://localhost/docs](http://localhost/docs). (or your domain instead of localhost)
 3. On the API page, you'll find an interactive interface that allows you to explore and test the different API routes and endpoints.
 
-![image info](./swagger.png)
+[![image info](./swagger.png)](https://nanocheeze.com/docs)
 
