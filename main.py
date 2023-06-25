@@ -47,10 +47,10 @@ class StoryItem(BaseModel):
     author: str
 
 @app.post("/todos/{username}", status_code=201)
-async def add_todo(username: str, todo: TodoItem) -> Dict[str, str]:
+async def add_todo(username: str, todo: TodoItem, password: str) -> Dict[str, str]:
     if username not in _TODOS:
-        _TODOS[username] = []
-    _TODOS[username].append(todo.todo)
+        _TODOS[username] = {"todos": [], "password": password}
+    _TODOS[username]["todos"].append(todo.todo)
     return {"status": 'OK'}
 
 @app.get("/pull/images/")
@@ -184,11 +184,18 @@ async def get_stories() -> List[Dict[str, str]]:
 
 @app.get("/todos/{username}", response_model=List[str])
 async def get_todos(username: str) -> List[str]:
-    return _TODOS.get(username, [])
+    user_data = _TODOS.get(username, None)
+    if user_data is None:
+        return []
+    else:
+        return user_data["todos"]
 
 @app.delete("/todos/{username}", status_code=204)
-async def delete_todo(username: str, todo_index: TodoIndex):
-    todos = _TODOS.get(username, [])
+async def delete_todo(username: str, todo_index: TodoIndex, password: str):
+    user_data = _TODOS.get(username, None)
+    if user_data is None or user_data["password"] != password:
+        raise HTTPException(status_code=403, detail="Invalid username or password")
+    todos = user_data["todos"]
     if todo_index.todo_idx < len(todos):
         todos.pop(todo_index.todo_idx)
     else:
