@@ -125,7 +125,7 @@ Simply type:
 venv\Scripts\activate.bat
 hypercorn main:app --bind 0.0.0.0:443 --certfile certificate.crt --keyfile private.key --log-level debug
 ```
-note: I had to concantenate my two crt files provided by zerossl into one crt file for my server to authenticate with openai. I do not know if this is always a needed step or not. This was only need for domain access and not localhost access.
+note: I had to concantenate my two crt files provided by zerossl into one crt file for my server to authenticate with openai. I do not know if this is always a needed step or not. This was only needed for domain access and not localhost access.
 
 
 Once the local server is running:
