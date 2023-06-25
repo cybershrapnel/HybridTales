@@ -1,6 +1,8 @@
 ![image info](./logo.png)
 
-NanoCheeZe HybridTales Plugin for ChatGPT
+NanoCheeZe HybridTales Plugin for ChatGPT (WITH LINK SCRAPER/READER AND IMAGE PULLER)
+
+Easily perform power prompts, transform ChatGPT into a powerful power prompted AI with avatar personas, and easily write infinite unique stories in a fun and interesting way that brings you as the user along for the experience as an interactive part of the AI creation process.
 
 This is a much more complicated version of a demonstration plugin I posted here:
 [https://github.com/cybershrapnel/chatgpt-plugins-fastapi-quickstart](https://github.com/cybershrapnel/chatgpt-plugins-fastapi-quickstart)
