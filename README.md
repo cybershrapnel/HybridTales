@@ -159,3 +159,12 @@ You can access the API documentation and make queries using Swagger. Follow the 
 
 [![image info](./swagger.png)](https://nanocheeze.com/docs)
 
+I also found some interesting info on OpenAIs developer docs about upcoming and released models. 
+
+I assume the beta plugins must be using the newly released and/or upcoming 32k gpt4 models.
+
+Says June 27th, but clearly it's rolling out early on dev plugins as I am doing 32k context.
+
+![image](https://github.com/cybershrapnel/HybridTales/assets/17352697/8d5c4929-6252-458d-85e8-eab8dcdb2f81)
+
+
