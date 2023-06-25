@@ -22,6 +22,7 @@ By accessing that page with linkreader you are essentially loading in a random s
 12. You can use the avatars sample feature to see what's available or you can just request a name and it will do a search to see if it is on file. If it finds a persona that seems to match what you are asking for it will load that as chatgpt. You can then call further prompts that will have the new persona retell stories from tales or stories functions as them from their POV. Try the following prompt.
 ![image info](https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmVrgx884BuaqpCSUm33V7WJQ15SdF7uaP25XmdUntaNkt/image.png)
 ![image info](https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmRY8NHdZaDfrug4eQmKTSmHayYySEXHiWefEUr3Tj8WnE/image.png)
+![image info](https://steemitimages.com/1280x0/https://cdn.steemitimages.com/DQmW6zAa1cUNBR8gwVPiNqXfHNcXfCRPnJbyppKBfJtSfeD/image.png)
 
 You can access, view, and even interactively use our API from the following page:
 [https://nanocheeze.com/docs#
