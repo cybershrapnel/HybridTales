@@ -4,6 +4,7 @@ from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from bs4 import BeautifulSoup
+from urllib.parse import urljoin
 import requests
 from pydantic import BaseModel
 import hypercorn
@@ -51,6 +52,33 @@ async def add_todo(username: str, todo: TodoItem) -> Dict[str, str]:
         _TODOS[username] = []
     _TODOS[username].append(todo.todo)
     return {"status": 'OK'}
+
+@app.get("/pull/images/")
+async def pull_images(url: str):
+    # Send a GET request to the URL
+    response = requests.get(url)
+
+    # Check if the request was successful
+    if response.status_code == 200:
+        # Parse the HTML of the webpage
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        # Find all image tags
+        img_tags = soup.find_all('img')
+
+        # Extract the URLs of the images
+        img_urls = []
+        for img in img_tags:
+            if 'src' in img.attrs:
+                src = img['src']
+                # Convert relative URLs to absolute URLs
+                src = urljoin(url, src)
+                img_urls.append(src)
+
+        # Return the image URLs
+        return {"images": img_urls}
+    else:
+        return {"error": "Unable to pull images from the URL"}
 
 @app.get("/scrape/")
 async def scrape(url: str):
@@ -146,7 +174,7 @@ async def get_random_prompt():
 @app.get("/tales/random")
 async def get_random_tale() -> str:
     # Get all subdirectories in the 'tales' directory
-    subdirectories = [f.path for f in os.scandir('tales') if f.is_dir()]
+    subdirectories = [f.path for f in os.scandir('W:') if f.is_dir()]
 
     # Select a random subdirectory
     random_subdirectory = random.choice(subdirectories)
